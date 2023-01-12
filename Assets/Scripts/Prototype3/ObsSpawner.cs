@@ -10,9 +10,12 @@ public class ObsSpawner : MonoBehaviour
     private float startDelay = 2;
     private float repeatRate = 2;
 
+    private FarmerController playerController;
+
     void Start()
     {
         InvokeRepeating("SpawnObstacles", startDelay, repeatRate);
+        playerController = GameObject.Find("Player").GetComponent<FarmerController>();
     }
 
     // Update is called once per frame
@@ -23,7 +26,10 @@ public class ObsSpawner : MonoBehaviour
 
     void SpawnObstacles()
     {
-        Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+        if (playerController.gameOver == false)
+        {
+            Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
 
+        }
     }
 }

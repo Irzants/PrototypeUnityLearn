@@ -58,13 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\DestroyOutOfBounds.cs" />
+    <Compile Include="Assets\Scripts\Prototype3\ObsSpawner.cs" />
+    <Compile Include="Assets\Scripts\Prototype3\FarmerController.cs" />
+    <Compile Include="Assets\Scripts\Prototype3\RepeatBackground.cs" />
     <Compile Include="Assets\Scripts\DetectCollisions.cs" />
+    <Compile Include="Assets\Scripts\Prototype3\ObstacleMoves.cs" />
     <Compile Include="Assets\Scripts\MoveForward.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
-    <Compile Include="Assets\Scripts\Prototype3\FarmerController.cs" />
-    <Compile Include="Assets\Scripts\Prototype3\ObstacleMoves.cs" />
-    <Compile Include="Assets\Scripts\Prototype3\ObsSpawner.cs" />
-    <Compile Include="Assets\Scripts\Prototype3\RepeatBackground.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityPackage3\_Source_Files\Materials\UnlitVertexColour_Alpha.shader" />
